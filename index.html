@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Jocas Coffee</title>
+</head>
+<body>
+    <div class="foto-fundo"> 
+    <img class="fundo" src="./imagens/foto fundo.png">
+    </div>
+    <header class="cabecalho">
+        <img class="foto-perfil" src="./imagens/foto perfil.png">
+        <h1 class="titulo"> Joca´s coffee</h1>
+    </header>
+   <section>
+     <nav id="barra-navegacao">
+        <div class="container-fluid">
+             <li class="botao">
+                <button> Café</button>
+             </li>
+             <li class="botao">
+                <button> Sucos</button>
+             </li>
+             <li class="botao">
+                <button> Tapiocas</button>
+             </li>
+             <li class="botao">
+                <button>Pão</button>
+             </li>
+        </div>
+      </nav>    
+    </section>
+    <main class="container-item">
+          <div class="cafe-lista">
+              <h3 class="subtitulo">Café</h3>
+          </div>
+          <div class="produto">
+              <div class="quantity-control">
+                  <li class="nome-item">Café</li>
+                  <button class="quantity-button" onclick="changeQuantity('cafe', -1)">-</button>
+                  <input type="number" id="quantidade-cafe" name="quantidade" min="1" max="10" value="0">
+                  <button class="quantity-button" onclick="changeQuantity('cafe', 1)">+</button>
+              </div>
+          </div>
+      
+          <div class="produto">
+              <div class="quantity-control">
+                  <li class="nome-item">Café Com Leite</li>
+                  <button class="quantity-button" onclick="changeQuantity('cafe-com-leite', -1)">-</button>
+                  <input type="number" id="quantidade-cafe-com-leite" name="quantidade" min="1" max="10" value="0">
+                  <button class="quantity-button" onclick="changeQuantity('cafe-com-leite', 1)">+</button>
+              </div>
+          </div>
+      
+          <div class="produto">
+              <div class="quantity-control">
+                  <li class="nome-item">Cappuccino</li>
+                  <button class="quantity-button" onclick="changeQuantity('cappuccino', -1)">-</button>
+                  <input type="number" id="quantidade-cappuccino" name="quantidade" min="1" max="10" value="0">
+                  <button class="quantity-button" onclick="changeQuantity('cappuccino', 1)">+</button>
+              </div>
+          </div>
+      
+          <div class="produto">
+              <div class="quantity-control">
+                  <li class="nome-item">Cappuccino Especial</li>
+                  <button class="quantity-button" onclick="changeQuantity('cappuccino-especial', -1)">-</button>
+                  <input type="number" id="quantidade-cappuccino-especial" name="quantidade" min="1" max="10" value="0">
+                  <button class="quantity-button" onclick="changeQuantity('cappuccino-especial', 1)">+</button>
+              </div>
+          </div>
+      </section>
+      
+      <script>
+      function changeQuantity(productName, amount) {
+          var quantidadeInput = document.getElementById("quantidade-" + productName);
+          var newValue = parseInt(quantidadeInput.value) + amount;
+          if (newValue >= parseInt(quantidadeInput.min) && newValue <= parseInt(quantidadeInput.max)) {
+              quantidadeInput.value = newValue;
+          }
+      }
+      </script>
+      
+    </main>
+ <script src="./index.js"></script>
+<script src="./bootstrap-5.3.2-dist/js"></script>
+</body>
+ 
+</html>
+
+
+
+
