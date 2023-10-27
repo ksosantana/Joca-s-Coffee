@@ -1,3 +1,7 @@
 .quantity-control {
     display: flex;
 }
+
+#sub-titulo {
+    display: flex;
+}
