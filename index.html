@@ -4,222 +4,207 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Jocas Coffee</title>
+    <title>Joca's Coffee</title>
 </head>
 <body>
-    <div class="foto-fundo"> 
+   <!-- <div class="foto-fundo"> 
     <img class="fundo" src="./imagens/foto fundo.png">
-    </div>
+    </div>-->
     <header class="cabecalho">
         <img class="foto-perfil" src="./imagens/foto perfil.png">
-        <h1 class="titulo"> Joca´s coffee</h1>
+        <h1 class="titulo">Joca's Coffee</h1>
     </header>
-   <section>
-     <nav id="barra-navegacao">
-        <div class="container-fluid">
-             <li class="botao">
-                <button> Café</button>
-             </li>
-             <li class="botao">
-                <button> Sucos</button>
-             </li>
-             <li class="botao">
-                <button> Tapiocas</button>
-             </li>
-             <li class="botao">
-                <button>Pão</button>
-             </li>
-        </div>
-      </nav>    
+
+    <section>
+        <nav id="barra-navegacao">
+            <div class="container-fluid">
+                <li class="botao">
+                    <button> Café</button>
+                </li>
+                <li class="botao">
+                    <button> Sucos</button>
+                </li>
+                <li class="botao">
+                    <button> Tapiocas</button>
+                </li>
+                <li class="botao">
+                    <button> Pão</button>
+                </li>
+            </div>
+        </nav>   
     </section>
+
     <main class="container-item">
-    <section>
-          <div class="cafe-lista">
-              <h3 class="subtitulo">Café</h3>
-          </div>
-          <div class="produto">
-              <div class="quantity-control">
-                  <li class="nome-item">Café</li>
-                  <button class="quantity-button" onclick="changeQuantity('cafe', -1)">-</button>
-                  <input type="number" id="quantidade-cafe" name="quantidade" min="1" max="10" value="0">
-                  <button class="quantity-button" onclick="changeQuantity('cafe', 1)">+</button>
-              </div>
-          </div>
-      
-          <div class="produto">
-              <div class="quantity-control">
-                  <li class="nome-item">Café Com Leite</li>
-                  <button class="quantity-button" onclick="changeQuantity('cafe-com-leite', -1)">-</button>
-                  <input type="number" id="quantidade-cafe-com-leite" name="quantidade" min="1" max="10" value="0">
-                  <button class="quantity-button" onclick="changeQuantity('cafe-com-leite', 1)">+</button>
-              </div>
-          </div>
-      
-          <div class="produto">
-              <div class="quantity-control">
-                  <li class="nome-item">Cappuccino</li>
-                  <button class="quantity-button" onclick="changeQuantity('cappuccino', -1)">-</button>
-                  <input type="number" id="quantidade-cappuccino" name="quantidade" min="1" max="10" value="0">
-                  <button class="quantity-button" onclick="changeQuantity('cappuccino', 1)">+</button>
-              </div>
-          </div>
-      
-          <div class="produto">
-              <div class="quantity-control">
-                  <li class="nome-item">Cappuccino Especial</li>
-                  <button class="quantity-button" onclick="changeQuantity('cappuccino-especial', -1)">-</button>
-                  <input type="number" id="quantidade-cappuccino-especial" name="quantidade" min="1" max="10" value="0">
-                  <button class="quantity-button" onclick="changeQuantity('cappuccino-especial', 1)">+</button>
-              </div>
-          </div>
-    </section>
+        <!-- Lista de café -->
+        <section id="lista-cafe">
+            <div class="subtitulo-cafe">
+                <h3 class="nome">Café</h3>
+            </div>
+            <div class="produto">
+                <div class="quantity-control">
+                    <li class="nome-item">Café</li>
+                    <button class="quantity-button" onclick="changeQuantity('cafe', -1)">-</button>
+                    <input type="number" id="quantidade-cafe" name="quantidade" min="0" max="10" value="0">
+                    <button class="quantity-button" onclick="changeQuantity('cafe', 1)">+</button>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="quantity-control">
+                    <li class="nome-item">Café Com Leite</li>
+                    <button class="quantity-button" onclick="changeQuantity('cafe-com-leite', -1)">-</button>
+                    <input type="number" id="quantidade-cafe-com-leite" name="quantidade" min="0" max="10" value="0">
+                    <button class="quantity-button" onclick="changeQuantity('cafe-com-leite', 1)">+</button>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="quantity-control"> 
+                    <li class="nome-item">Cappuccino</li>
+                    <button class="quantity-button" onclick="changeQuantity('cappuccino', -1)">-</button>
+                    <input type="number" id="quantidade-cappuccino" name="quantidade" min="0" max="10" value="0">
+                    <button class="quantity-button" onclick="changeQuantity('cappuccino', 1)">+</button>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="quantity-control">
+                    <li class="nome-item">Cappuccino Especial</li>
+                    <button class="quantity-button" onclick="changeQuantity('cappuccino-especial', -1)">-</button>
+                    <input type="number" id="quantidade-cappuccino-especial" name="quantidade" min="0" max="10" value="0">
+                    <button class="quantity-button" onclick="changeQuantity('cappuccino-especial', 1)">+</button>
+                </div>
+            </div>
+        </section> 
 
-    <!-- partes de sucos -->
-
-    <section>
-        <div id="sub-titulo">
-            <h3 class="subtitulo">Sucos</h3>
-            <h5 class="tamanho-em-ml">300ml / 400ml /500ml</h5>
-        </div>
-        <div class="produto">
-            <div class="quantity-control">
-                <li class="nome-item">Maracujá</li>
-                <button class="quantity-button" onclick="changeQuantity('Maracuja', -1)">-</button>
-                <input type="number" id="quantidade-suco-maracuja" name="quantidade" min="1" max="10" value="0">
-                <button class="quantity-button" onclick="changeQuantity('Maracuja', 1)">+</button>
+        <!-- Partes de sucos -->
+        <section id="lista-sucos">
+            <div class="sub-titulo-suco">
+                <h3 class="nome">Sucos</h3>
+                <h5 class="tamanho-em-ml">300ml / 400ml / 500ml</h5>
             </div>
-        </div>
-    
-        <div class="produto">
-            <div class="quantity-control">
-                <li class="nome-item">Laranja</li>
-                <button class="quantity-button" onclick="changeQuantity('Laranja', -1)">-</button>
-                <input type="number" id="quantidade-suco-laranja" name="quantidade" min="1" max="10" value="0">
-                <button class="quantity-button" onclick="changeQuantity('Laranja', 1)">+</button>
+            <div class="produto">
+                <div class="quantity-control">
+                    <li class="nome-item">Maracujá</li>
+                    <button class="quantity-button" onclick="changeQuantity('maracuja', -1)">-</button>
+                    <input type="number" id="quantidade-suco-maracuja" name="quantidade" min="0" max="10" value="0">
+                    <button class="quantity-button" onclick="changeQuantity('maracuja', 1)">+</button>
+                </div>
             </div>
-        </div>
-    
-        <div class="produto">
-            <div class="quantity-control">
-                <li class="nome-item">Cupuaçu</li>
-                <button class="quantity-button" onclick="changeQuantity('cupuacu', -1)">-</button>
-                <input type="number" id="quantidade-suco-cupuacu" name="quantidade" min="1" max="10" value="0">
-                <button class="quantity-button" onclick="changeQuantity('cupuacu', 1)">+</button>
+            <div class="produto">
+                <div class="quantity-control">
+                    <li class="nome-item">Laranja</li>
+                    <button class="quantity-button" onclick="changeQuantity('laranja', -1)">-</button>
+                    <input type="number" id="quantidade-suco-laranja" name="quantidade" min="0" max="10" value="0">
+                    <button class="quantity-button" onclick="changeQuantity('laranja', 1)">+</button>
+                </div>
             </div>
-        </div>
-    
-        <div class="produto">
-            <div class="quantity-control">
-                <li class="nome-item">Acerola</li>
-                <button class="quantity-button" onclick="changeQuantity('Acerola', -1)">-</button>
-                <input type="number" id="quantidade-suco-acerola" name="quantidade" min="1" max="10" value="0">
-                <button class="quantity-button" onclick="changeQuantity('Acerola', 1)">+</button>
+            <div class="produto">
+                <div class="quantity-control">
+                    <li class="nome-item">Cupuaçu</li>
+                    <button class="quantity-button" onclick="changeQuantity('cupuacu', -1)">-</button>
+                    <input type="number" id="quantidade-suco-cupuacu" name="quantidade" min="0" max="10" value="0">
+                    <button class="quantity-button" onclick="changeQuantity('cupuacu', 1)">+</button>
+                </div>
             </div>
-        </div>
-    </section>
-    <!-- partes de tapiocas -->
-    <section>
-        <div class="cafe-lista">
-            <h3 class="subtitulo">Tapiocas</h3>
-        </div>
-        <div class="produto">
-            <div class="quantity-control">
-                <li class="nome-item">Tapioca Simples</li>
-                <button class="quantity-button" onclick="changeQuantity('tapioca-simples', -1)">-</button>
-                <input type="number" id="quantidade-tapioca-simples" name="quantidade" min="1" max="10" value="0">
-                <button class="quantity-button" onclick="changeQuantity('tapioca-simples', -1)">-</button>
+            <div class="produto">
+                <div class="quantity-control">
+                    <li class="nome-item">Acerola</li>
+                    <button class="quantity-button" onclick="changeQuantity('acerola', -1)">-</button>
+                    <input type="number" id="quantidade-suco-acerola" name="quantidade" min="0" max="10" value="0">
+                    <button class="quantity-button" onclick="changeQuantity('acerola', 1)">+</button>
+                </div>
             </div>
-        </div>
-    
-        <div class="produto">
-            <div class="quantity-control">
-                <li class="nome-item">Tapioca com queijo</li>
-                <button class="quantity-button" onclick="changeQuantity('tapioca-com-queijo', -1)">-</button>
-                <input type="number" id="quantidade-tapioca-com-queijo" name="quantidade" min="1" max="10" value="0">
-                <button class="quantity-button" onclick="changeQuantity('tapioca-com-queijo', 1)">+</button>
+        </section>
+        <!-- Partes de tapiocas -->
+        <section id="lista-tapioca">
+            <div class="subtitulo-tapioca">
+                <h3 class="nome">Tapiocas</h3>
             </div>
-        </div>
-    
-        <div class="produto">
-            <div class="quantity-control">
-                <li class="nome-item">Tapioca X-caboquinho</li>
-                <button class="quantity-button" onclick="changeQuantity('tapioca-x-caboquinho', -1)">-</button>
-                <input type="number" id="quantidade-tapioca-x-caboquinho" name="quantidade" min="1" max="10" value="0">
-                <button class="quantity-button" onclick="changeQuantity('tapioca-x-caboquinho', 1)">+</button>
+            <div class="produto">
+                <div class="quantity-control">
+                    <li class="nome-item">Tapioca Simples</li>
+                    <button class="quantity-button" onclick="changeQuantity('tapioca-simples', -1)">-</button>
+                    <input type="number" id="quantidade-tapioca-simples" name="quantidade" min="0" max="10" value="0">
+                    <button class="quantity-button" onclick="changeQuantity('tapioca-simples', 1)">+</button>
+                </div>
             </div>
-        </div>
-    
-        <div class="produto">
-            <div class="quantity-control">
-                <li class="nome-item">Tapioca com ovos, queijo e prejunto</li>
-                <button class="quantity-button" onclick="changeQuantity('tapioca-com-ovos-queijo-presunto', -1)">-</button>
-                <input type="number" id="quantidade-tapioca-com-ovos-queijo-presunto" name="quantidade" min="1" max="10" value="0">
-                <button class="quantity-button" onclick="changeQuantity('tapioca-com-ovos-queijo-presunto', 1)">+</button>
+            <div class="produto">
+                <div class="quantity-control">
+                    <li class="nome-item">Tapioca com queijo</li>
+                    <button class="quantity-button" onclick="changeQuantity('tapioca-com-queijo', -1)">-</button>
+                    <input type="number" id="quantidade-tapioca-com-queijo" name="quantidade" min="0" max="10" value="0">
+                    <button class="quantity-button" onclick="changeQuantity('tapioca-com-queijo', 1)">+</button>
+                </div>
             </div>
-        </div>
-    </section>
-<!-- partes de pães -->
-
-    <section>
-      <div id="sub-titulo">
-          <h3 class="subtitulo">Pão</h3>
-      </div>
-      <div class="produto">
-          <div class="quantity-control">
-              <li class="nome-item">Pão Simples</li>
-              <button class="quantity-button" onclick="changeQuantity('pao-simples', -1)">-</button>
-              <input type="number" id="quantidade-pao-simples" name="quantidade" min="1" max="10" value="0">
-              <button class="quantity-button" onclick="changeQuantity('pao-simples', 1)">+</button>
-          </div>
-      </div>
-  
-      <div class="produto">
-          <div class="quantity-control">
-              <li class="nome-item">Pão com queijo </li>
-              <button class="quantity-button" onclick="changeQuantity('pao-com-queijo', -1)">-</button>
-              <input type="number" id="quantidade-pao-com-queijo" name="quantidade" min="1" max="10" value="0">
-              <button class="quantity-button" onclick="changeQuantity('pao-com-queijo', 1)">+</button>
-          </div>
-      </div>
-  
-      <div class="produto">
-          <div class="quantity-control">
-              <li class="nome-item">X-caboquinho</li>
-              <button class="quantity-button" onclick="changeQuantity('x-caboquinho', -1)">-</button>
-              <input type="number" id="quantidade-x-caboquinho" name="quantidade" min="1" max="10" value="0">
-              <button class="quantity-button" onclick="changeQuantity('x-caboquinho', 1)">+</button>
-          </div>
-      </div>
-  
-      <div class="produto">
-          <div class="quantity-control">
-              <li class="nome-item">Pão com ovos, queijo e prejunto</li>
-              <button class="quantity-button" onclick="changeQuantity('Acerola', -1)">-</button>
-              <input type="number" id="quantidade-suco-acerola" name="quantidade" min="1" max="10" value="0">
-              <button class="quantity-button" onclick="changeQuantity('Acerola', 1)">+</button>
-          </div>
-      </div>
-  </section>
-
-      <script>
-      function changeQuantity(productName, amount) {
-          var quantidadeInput = document.getElementById("quantidade-" + productName);
-          var newValue = parseInt(quantidadeInput.value) + amount;
-          if (newValue >= parseInt(quantidadeInput.min) && newValue <= parseInt(quantidadeInput.max)) {
-              quantidadeInput.value = newValue;
-          }
-      }
-    </script>
-      
+            <div class="produto">
+                <div class="quantity-control">
+                    <li class="nome-item">Tapioca X-caboquinho</li>
+                    <button class="quantity-button" onclick="changeQuantity('tapioca-x-caboquinho', -1)">-</button>
+                    <input type="number" id="quantidade-tapioca-x-caboquinho" name="quantidade" min="0" max="10" value="0">
+                    <button class="quantity-button" onclick="changeQuantity('tapioca-x-caboquinho', 1)">+</button>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="quantity-control">
+                    <li class="nome-item">Tapioca com ovos, queijo e presunto</li>
+                    <button class="quantity-button" onclick="changeQuantity('tapioca-com-ovos-queijo-presunto', -1)">-</button>
+                    <input type="number" id="quantidade-tapioca-com-ovos-queijo-presunto" name="quantidade" min="0" max="10" value="0">
+                    <button class="quantity-button" onclick="changeQuantity('tapioca-com-ovos-queijo-presunto', 1)">+</button>
+                </div>
+            </div>
+        </section>
+        <!-- Partes de pães -->
+        <section id="lista-pao">
+            <div class="sub-titulo-pao">
+                <h3 class="nome">Pães</h3>
+            </div>
+            <div class="produto">
+                <div class="quantity-control">
+                    <li class="nome-item">Pão Simples</li>
+                    <button class="quantity-button" onclick="changeQuantity('pao-simples', -1)">-</button>
+                    <input type="number" id="quantidade-pao-simples" name="quantidade" min="0" max="10" value="0">
+                    <button class="quantity-button" onclick="changeQuantity('pao-simples', 1)">+</button>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="quantity-control">
+                    <li class="nome-item">Pão com queijo</li>
+                    <button class="quantity-button" onclick="changeQuantity('pao-com-queijo', -1)">-</button>
+                    <input type="number" id="quantidade-pao-com-queijo" name="quantidade" min="0" max="10" value="0">
+                    <button class="quantity-button" onclick="changeQuantity('pao-com-queijo', 1)">+</button>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="quantity-control">
+                    <li class="nome-item">X-caboquinho</li>
+                    <button class="quantity-button" onclick="changeQuantity('x-caboquinho', -1)">-</button>
+                    <input type="number" id="quantidade-x-caboquinho" name="quantidade" min="0" max="10" value="0">
+                    <button class="quantity-button" onclick="changeQuantity('x-caboquinho', 1)">+</button>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="quantity-control">
+                    <li class="nome-item">Pão com ovos, queijo e presunto</li>
+                    <button class="quantity-button" onclick="changeQuantity('pao-com-ovos-queijo-presunto', -1)">-</button>
+                    <input type="number" id="quantidade-pao-com-ovos-queijo-presunto" name="quantidade" min="0" max="10" value="0">
+                    <button class="quantity-button" onclick="changeQuantity('pao-com-ovos-queijo-presunto', 1)">+</button>
+                </div>
+            </div>
+        </section>
     </main>
- <script src="./index.js"></script>
-<script src="./bootstrap-5.3.2-dist/js"></script>
-</body>
- 
-</html>
 
+    <script>
+        function changeQuantity(productName, amount) {
+            var quantidadeInput = document.getElementById("quantidade-" + productName);
+            var newValue = parseInt(quantidadeInput.value) + amount;
+            if (newValue >= parseInt(quantidadeInput.min) && newValue <= parseInt(quantidadeInput.max)) {
+                quantidadeInput.value = newValue;
+            }
+        }
+    </script>
+  
+</body>
+</html>
 
 
 
