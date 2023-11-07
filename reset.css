@@ -4,6 +4,20 @@
     box-sizing: border-box;
     
 }
-ul {
+li {
+    list-style: none;
+}
+ul  {
  list-style: nome;   
 }
+.botao  {
+    border: transparent;
+    
+  }
+  .botao-lista {
+    border: transparent;
+
+  }
+  .card {
+    border: none;
+  }
