@@ -9,8 +9,9 @@ body {
 }
 .cabecalho .titulo{
     display:flex ; 
-    justify-content:center;
     align-items: center;
+    justify-content:center;
+    text-align: center;
     font-family: 'Great Vibes', cursive;
     
     
@@ -40,18 +41,44 @@ body {
     gap: 10px;
     
 }
-
-.card {
-    width: 300px;
-    height: 150px; 
-    vertical-align: top;
-    text-align: center; 
-  }
   
 .fotos-produto{
-    max-width: 100px;
+
     border-radius: 500% ;
-    margin: 10px 10px auto;
+    margin: 10px 10px center;
+    height: 75%;
+    width: 30%;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.card {
+    margin-left: 5px !important;
+}
+.botao-lista{
+    height: 60%;
+}
+
+article{
+    width: 50%;
+    margin-bottom: 32px;
+}
+
+.conteudo{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background: #d9d9d9;
+    width: 80%;
+    border-radius: 10px;
+    height: 146px;
+    justify-content: space-evenly;
 }
 /*
 .foto-fundo {
