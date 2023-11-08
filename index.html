@@ -21,7 +21,7 @@
     </div>-->
     <header class="cabecalho">
         <img class="foto-perfil" src="./imagens/foto perfil.png">
-        <h1 class="titulo">Joca's Coffee</h1>
+        <h1 class="titulo" class="titulo">Joca's Coffee</h1 class="sub-titulo">
     </header>
     <nav class="botoes">
         <li>
@@ -39,9 +39,9 @@
     
     </nav>
     <main class="container">
-      <h1>Café</h1>
+      <h1 class="sub-titulo">Café</h1>
       <section id="cafe">
-        <article>
+        <article class="conteudo-pai">
           <div class="conteudo">
             <img class="fotos-produto" src="./imagens/cafe simples.jpeg" alt="cafe-simples">
             <h3>Café Expresso</h3>
@@ -66,7 +66,7 @@
           </div>
         </article>
       </section>
-      <h1>Suco</h1>
+      <h1 class="sub-titulo">Suco</h1>
       <section id="suco">
         <article>
           <div class="conteudo">
@@ -93,7 +93,7 @@
           </div>
         </article>
       </section>
-      <h1>Tapiocas</h1>
+      <h1 class="sub-titulo">Tapiocas</h1>
       <section id="tapioca">
         <article>
           <div class="conteudo">
@@ -121,7 +121,7 @@
         </article>
         </article>
       </section>
-      <h1>Pão</h1>
+      <h1 class="sub-titulo">Pão</h1>
       <section id="tapioca">
         <article>
           <div class="conteudo">
@@ -147,11 +147,33 @@
             <h3>Pão com queijo <br>e presunto</h3>
           </div>
         </article>
-        </section>
+      </section>
       
-
+        <article>
+          <div class="modal">
+            <div class="conteudo-modal">
+              <span class="fechar-modal">X</span>
+              <img class="foto-modal" src="./imagens/cafe simples.jpeg">
+              <h3 class="fonte-modal">Café Expresso</h3>
+              <h4>R$ 4,50</h4>
+              <input class="fonte-modal" placeholder="Observação">
+              <div class="qtd-item">
+                
+                <button id="diminuir">-</button>
+                <span id="valor">0</span>
+                <button id="aumentar">+</button>
+              
+              </div>
+              <div class="confirmar">
+                <span id="quantidade">n</span>
+                <button id="adicionar">adicionar</button>
+              </div>
+            </div>
+          </div>
+        </article>
+      
     </main>
-  
+    <script src="./modal.js"></script>
 </body>
 </html>
 
