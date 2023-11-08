@@ -71,31 +71,97 @@ article{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
      display: none;
+     
     
   }
 
+  .conteudo-modal-principal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .botao-qtd{
+    border: none;
+    font-size: 25px;
+    background: transparent;
+  }
+
+  .botoes-add{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 10px;
+  }
+  .qtd-item{
+    background: #E3E1E1;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 20px;
+  }
+
   .conteudo-modal {
-    background-color: rgb(197, 188, 188);
+    background-color: #D9D9D9;
     padding: 20px;
     text-align: center;
-   width: 60%;
+    width: 80%;
     max-width: 600px;
     margin: 0 auto;
     margin-top: 10%;
     position: relative;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
   }
+
+  #diminuir{
+   color: #B05151;
+  }
+  #aumentar{
+    color: #8AA877;
+  }
+
+  #adicionar{
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: #FFFFFF;
+  }
+
+  .confirmar{
+    background-color: #C57C0F;
+    border-radius: 3px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 144px;
+    padding: 4px;
+  }
+p{
+  margin: 0px;
+}
+.conteudo-modal-seg{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+  
 
   .fechar-modal {
     position: absolute;
-    top: 217px;
-    right: 437px;
+    top: 10px;
+    right: 10px;
     cursor: pointer;
   }
 
   .foto-modal {
-    border-radius: 500% ;
-    height: 75%;
-    width: 30%;
+    border-radius: 500%;
+    height: 88%;
+    width: 90%;
   }
 
   .fonte-modal {

@@ -152,23 +152,29 @@
         <article>
           <div class="modal">
             <div class="conteudo-modal">
-              <span class="fechar-modal">X</span>
-              <img class="foto-modal" src="./imagens/cafe simples.jpeg">
-              <h3 class="fonte-modal">Café Expresso</h3>
-              <h4>R$ 4,50</h4>
-              <input class="fonte-modal" placeholder="Observação">
-              <div class="qtd-item">
-                
-                <button id="diminuir">-</button>
-                <span id="valor">0</span>
-                <button id="aumentar">+</button>
-              
+                  <span class="fechar-modal">&times;</span>
+                    <div class="conteudo-modal-principal">
+                      <img class="foto-modal" src="./imagens/cafe simples.jpeg">
+                    </div>
+                  <div class="conteudo-modal-seg">
+                      <h3 class="fonte-modal">Café Expresso</h3> 
+                      <span>R$ <span id="valor_uni">4,50</span></span>
+                      <textarea id="story" name="story" rows="5" cols="33">
+                        Observação
+                      </textarea>
+                  <div class="botoes-add">
+                      <div class="qtd-item">
+                        <button id="diminuir" class="botao-qtd">-</button>
+                        <span id="valor">0</span>
+                        <button id="aumentar" class="botao-qtd">+</button>
+                      </div>
+                      <div class="confirmar">
+                        <button id="adicionar">Adicionar</button>
+                        <span id="quantidade">n</span>
+                      </div>
+                </div>
               </div>
-              <div class="confirmar">
-                <span id="quantidade">n</span>
-                <button id="adicionar">adicionar</button>
-              </div>
-            </div>
+          </div>
           </div>
         </article>
       

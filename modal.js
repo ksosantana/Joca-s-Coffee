@@ -10,12 +10,23 @@ const diminuirValor =document.getElementById('diminuir')
 const aumentarValor =document.getElementById('aumentar')
 const quantValor =document.getElementById('quantidade')
 const adicionarValor =document.getElementById('adicionar')
+const qtdUni = document.getElementById('valor_uni');
+
+var valorQtd = qtdUni.textContent;
+
+
+
+var qtduni = parseFloat(valorQtd.replace(',','.'))
+
 
 let valor = 0
 
 const atualizarValor = () => {
+
+    var resultado = valor * qtduni
+    var resultadoFormato = resultado.toFixed(2)
     spanValor.textContent = valor
-    quantValor.textContent = valor 
+    quantValor.textContent = "R$" + resultadoFormato.replace(".",",");
 }
 
 aumentarValor.addEventListener("click",() =>{
