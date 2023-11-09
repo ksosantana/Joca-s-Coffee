@@ -227,6 +227,14 @@ textarea{
     opacity: 30%;
     
 }
+.carrinho{
+position: absolute;
+width: 10%;
+height: 10%;
+position: fixed;
+top: 0px;
+z-index: 1;
+}
 
 @media only screen and (max-width: 768px) {
 
@@ -264,5 +272,59 @@ textarea{
 }
 
 @media only screen and (max-width: 480px) {
-  /* Styles for screens up to 480px wide */
+ 
+  .cabecalho{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .botoes{
+    margin: 0;
+  }
+  .botao{
+    padding: 0;
+    font-size: 14px;
+  }
+  section{
+    flex-direction: column;
+  }
+
+  article{
+    width: 100%;
+    margin-bottom: 7px;
+  }
+  .conteudo{
+    width: 100%;
+  }
+  .conteudo-modal{
+    width: 93%;
+    margin-top: 53%;
+    left: 0px;
+    top: -2px;
+  }
+  .foto-modal{
+    width: 101px;
+    height: 100px;
+    position: relative;
+    left: -5%;
+    top: -88px;
+  }
+#story{
+  top: 9px;
+    position: relative;
+    left: -43px;
 }
+.qtd-item{
+  position: relative;
+  left: -30%;
+}
+.confirmar {
+  position: relative;
+  left: -30%;
+}
+.fonte-modal {
+  position: relative;
+    left: 11%;
+}
+}
+
