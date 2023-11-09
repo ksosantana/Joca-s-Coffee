@@ -178,5 +178,13 @@ p{
     visibility: visible;
  }
 
+ .conteudo-pai{
+  display: flex;
+  justify-content: center;
+ }
+
+ .conteudo h3{
+  font-family: 'Shadows Into Light', cursive;
+ }
 
 
