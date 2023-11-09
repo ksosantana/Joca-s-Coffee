@@ -89,6 +89,35 @@ function obterValorProduto(divClick) {
   return valorProduto || 'Valor não disponível';
 }
 
-    
 
+
+// click do botao para diferencionar para a section
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var botoes = document.querySelectorAll('.botoes button');
+  
+    botoes.forEach(function (botao) {
+      botao.addEventListener('click', function () {
+        // Remove a classe 'selecionado' de todos os botões
+        botoes.forEach(function (b) {
+          b.classList.remove('selecionado');
+        });
+  
+        // Adiciona a classe 'selecionado' ao botão clicado
+        this.classList.add('selecionado');
+  
+        // Obtém a classe correspondente à seção
+        var secaoClass = this.dataset.target;
+  
+        // Encontra a seção correspondente
+        var secao = document.getElementById(secaoClass);
+  
+        // Rola até a seção
+        if (secao) {
+          secao.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  });
 
