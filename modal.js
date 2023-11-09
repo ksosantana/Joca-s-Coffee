@@ -41,6 +41,8 @@ document.querySelectorAll('.conteudo-pai').forEach((divClick) => {
 
       // Reiniciar a quantidade para 0 quando clicar em outro item
       valor = 0;
+      // Limpar o conteúdo do textarea com o ID 'story'
+      document.getElementById('story').value = '';
 
       // Atualizar os elementos dentro da modal
       const fotoModal = modal.querySelector('.foto-modal');
