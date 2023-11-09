@@ -260,6 +260,30 @@ textarea{
   .foto-modal{
     width: 100px;
   }
+  header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgb(255, 255, 255);
+    z-index: 1000;
+  }
+  nav{
+    position: fixed;
+    width: 100%;
+    top: 153px;
+    background: rgb(255, 255, 255);
+    z-index: 1000;
+  }
+  main{
+    margin-top: 212px;
+  }
+  .botao.selecionado {
+    border: 2px solid #C57C0F; /* Cor e largura da borda, ajuste conforme necessário */
+  }
+
+  .botoes li:first-child {
+    border-bottom: none;
+  }
 
 }
 
