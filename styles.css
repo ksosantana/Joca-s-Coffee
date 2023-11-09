@@ -57,6 +57,7 @@ section{
     justify-content: center;
     flex-direction: row;
     width: 100%;
+    top: 10;
     flex-wrap: wrap;
 }
 article{
@@ -169,7 +170,7 @@ textarea{
 
   .fechar-modal {
     position: absolute;
-    top: 10px;
+    top: 0px;
     right: 10px;
     cursor: pointer;
   }
@@ -324,7 +325,7 @@ z-index: 1;
 }
 .fonte-modal {
   position: relative;
-    left: 11%;
+    left: 0%;
 }
 }
 
