@@ -193,7 +193,7 @@ textarea{
     visibility: visible;
  }
 
-<<<<<<< HEAD
+
  .conteudo-pai{
   display: flex;
   justify-content: center;
@@ -204,7 +204,6 @@ textarea{
  }
 
 
-=======
 .foto-fundo{
     background-color: #ffffff14;
     position: fixed;
@@ -220,4 +219,4 @@ textarea{
     opacity: 30%;
     
 }
->>>>>>> 2d7baa8901fecdf86b2d1d7795c7e8b134552916
+
