@@ -263,8 +263,17 @@ z-index: 1;
     width: 100%;
   }
   .conteudo-modal{
-    width: 96%;
-    margin-top: 64%;
+    width: 93%;
+    margin-top: 53%;
+    left: 0px;
+    top: -2px;
+  }
+  .foto-modal{
+    width: 101px;
+    height: 100px;
+    position: relative;
+    left: -5%;
+    top: -88px;
   }
   .foto-modal{
     width: 100px;
